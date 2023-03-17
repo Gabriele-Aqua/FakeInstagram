@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "sourceMap": true,
+    "allowJs": true,
+    "strict": true,
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "lib": [
+      "es2021",
+      "dom"
+    ],
+    "baseUrl": "./src",
+    "paths": {
+      "@scripts/*": ["./scripts/*"],
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "vendor",
+    "**/*.spec.ts",
+    "**/webpack.config.js",
+    "**/*.scss"
+  ]
+}

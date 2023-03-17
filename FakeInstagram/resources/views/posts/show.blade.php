@@ -7,8 +7,14 @@
         <img class="w-100" src="/storage/{{$post->image}}" alt="{{ $post->caption}}">
       </div>
       <div class="col-2">
-          <h3>{{ $post->user->username}}</h3>
-          <p>{{ $post->caption}}</p>
+         <a href="/profile/{{$post->user->id}}">
+            <div class="d-flex align-items-center">
+               <img class="w-50 rounded-circle me-3" src="/storage/{{ $post->user->profile->image }}" alt="{{ $post->user->username }}">
+               <h6> {{ $post->user->username }}</h6>
+            </div>
+         </a>
+         
+          <p class="mt-5">{{ $post->caption}}</p>
       </div>
    </div>
 </div>
